@@ -1,9 +1,9 @@
-## Plot1 creates a histogram chart of the "global active power"
+## plot1 creates a histogram chart of the "global active power"
 ## field for the 2007-02-01 to  2007-02-02 date range in the
 ## household_power_consumption dataset originally retrieved from the 
 ## UC Irvine Machine Learning Repository
 
-plot1 <- function() {
+
 	## Define column classes of dataset
 	classes <- c("character", "character", "numeric", "numeric", 
 		"numeric", "numeric", "numeric", "numeric", "numeric")
@@ -18,4 +18,3 @@ plot1 <- function() {
 	hist(data$Global_active_power, col = "red", main="Global Active Power", 
 		xlab="Global Active Power (kilowatts)")
 	dev.off()
-}

@@ -1,9 +1,8 @@
-## Plot2 creates a line chart of the "global active power"
+## plot2 creates a line chart of the "global active power"
 ## field for the 2007-02-01 to  2007-02-02 date range in the
 ## household_power_consumption dataset originally retrieved from the 
 ## UC Irvine Machine Learning Repository
 
-plot2 <- function() {
 	## Define column classes of dataset
 	classes <- c("character", "character", "numeric", "numeric", 
 		"numeric", "numeric", "numeric", "numeric", "numeric")
@@ -23,4 +22,3 @@ plot2 <- function() {
 		plot(newdata$dtime, newdata$Global_active_power, type ="l", 
 			ylab="Global Active Power (kilowatts)", xlab="")
 	dev.off()
-}

@@ -1,8 +1,7 @@
-## Plot4 creates a series of four charts of information for the 2007-02-01 
+## plot4 creates a series of four charts of information for the 2007-02-01 
 ## to 2007-02-02 date range in the household_power_consumption
 ## dataset originally retrieved from the UC Irvine Machine Learning Repository
 
-plot4 <- function() {
 	## Define column classes of dataset
 	classes <- c("character", "character", "numeric", "numeric", 
 		"numeric", "numeric", "numeric", "numeric", "numeric")
@@ -37,4 +36,3 @@ plot4 <- function() {
 		plot(newdata$datetime, newdata$Global_reactive_power, type ="l",
 			ylab="Global_reactive_power", xlab="datetime")
 	dev.off()
-}
